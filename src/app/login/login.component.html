@@ -1,0 +1,24 @@
+<div class="login-container">
+  <img
+    class="fundo-fixo"
+    src="https://images3.alphacoders.com/104/1045839.jpg"
+    alt="Fundo gamer"
+  />
+  <h2 class="titulo-animado">Login</h2>
+
+  <div class="form-group">
+    <label for="username">Usuário</label>
+    <input id="username" [(ngModel)]="username" />
+  </div>
+
+  <div class="form-group">
+    <label for="password">Senha</label>
+    <input id="password" type="password" [(ngModel)]="password" />
+  </div>
+
+  <div class="actions">
+    <button (click)="submit()">Entrar</button>
+  </div>
+
+  <div class="error" *ngIf="error">{{ error }}</div>
+</div>

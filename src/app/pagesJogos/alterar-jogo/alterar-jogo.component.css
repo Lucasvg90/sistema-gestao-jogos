@@ -1,0 +1,70 @@
+/* Estilização básica para o formulário */
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Estilo dos rótulos */
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Estilo dos campos de input */
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do botão */
+  form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* azul principal */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+  }
+
+   form button:hover {
+    background: linear-gradient(
+      to right,
+      #000000,
+      #1e90ff
+    ); /* gradiente preto e azul */
+    color: white;
+
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #24ccff;
+  
+  background-color: rgba(255, 255, 255, 0.1);  
+  }
+
+
+  img.fundo-fixo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}

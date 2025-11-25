@@ -1,0 +1,137 @@
+  .consulta-container {
+    position: relative; 
+    max-width: 700px;
+    width: 30%; 
+    min-height: 300px;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    margin-left: 5%;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #1e90ff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.5);
+    color: #1e90ff;
+    font-family: "Orbitron", "Segoe UI", sans-serif;
+
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form label {
+  text-align: center;
+  display: block; /* garante que ocupe a linha inteira */
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  animation: colorShift 6s infinite;
+  margin-bottom: 10px;
+}
+  
+  .input-id {
+    padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #1e90ff;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f3f3f3;
+  color: #000000;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  }
+
+  .input-id:focus {
+  outline: none; /* remove o contorno azul padrão */
+  border: 2px solid #1e90ff; /* borda azul personalizada */
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.6); /* brilho suave */
+  background-color: #f0f8ff; /* leve destaque no fundo */
+  transition: all 0.3s ease;
+}
+  
+  .btn-buscar {
+    padding: 12px;
+  background: linear-gradient(
+    to right,
+    #000000,
+    #1e90ff
+  ); /* gradiente preto e azul */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+  }
+  
+  .btn-buscar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00ffff;
+  color: #1abc9c;
+  background-color: rgba(171, 11, 11, 0.1);  }
+  
+  .cliente-dados {
+   margin-top: 30px;
+  padding: 15px;
+  background-color: #0f1a2b;
+  border: 1px solid #00ff99;
+  border-radius: 6px;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 255, 153, 0.5);
+  }
+  
+  .erro-busca {
+  margin-top: 20px;
+  color: #227b7b;
+  font-weight: bold;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  .consulta-container {
+    padding: 20px;
+    width: 95%;
+  }
+
+  .input-id,
+  .btn-buscar {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .cliente-dados {
+    padding: 12px;
+  }
+}
+
+.titulo-busca {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  animation: colorShift 3s infinite;
+}
+
+@keyframes colorShift {
+  0% {
+    color: #1e90ff;
+  }
+  50% {
+    color: #00ffff;
+  }
+  100% {
+    color: #1abc9c;
+  }
+}
+
+img.fundo-fixo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}

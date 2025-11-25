@@ -1,0 +1,101 @@
+<img
+  class="fundo-fixo"
+  src="https://www.fightersgeneration.com/news2025/game/streetfighter3-2nd-impact-akuma-stage-hd.gif"
+  alt="fundo gamer"
+/>
+
+<form>
+  
+  <label for="input-nome">Nome do Jogo</label><br />
+  <input
+    class="input-simples"
+    id="input-nome"
+    name="input-nome"
+    placeholder="Digite o nome do jogo"
+    type="text"
+    required
+    [(ngModel)]="jogo.nome_jogo"
+  />
+  <label for="input-data">Data de Lançamento</label><br />
+  <input
+    class="input-simples"
+    id="input-data"
+    name="data_lancamento"
+    placeholder="dd/mm/aaaa"
+    type="text"
+    minlength="10"
+    maxlength="10"
+    required
+    (input)="formatDateInput($event)"
+    [(ngModel)]="jogo.data_lancamento"
+    [class.input-invalid]="dateInvalid"
+  />
+  <div *ngIf="dateInvalid" class="error-text">Data inválida. Use dd/mm/aaaa (ex.: 31/12/2000).</div>
+  <label for="input-sobrenome">Gênero</label><br />
+  <input
+    class="input-simples"
+    id="input-email"
+    name="input-email"
+    placeholder="Insira o Gênero"
+    type="text"
+    required
+    [(ngModel)]="jogo.genero"
+  />
+  <label for="input-plataforma">Plataforma</label><br />
+  <select id="input-plataforma" name="plataforma" required [(ngModel)]="jogo.plataforma" class="input-simples">
+    <option value="" disabled selected>Selecione a plataforma</option>
+    <option value="pc">PC</option>
+    <option value="ps">PlayStation</option>
+    <option value="ps2">PlayStation 2</option>
+    <option value="ps3">PlayStation 3</option>
+    <option value="ps4">PlayStation 4</option>
+    <option value="ps5">PlayStation 5</option>
+    <option value="xbox">Xbox</option>
+    <option value="xbox360">Xbox 360</option>
+    <option value="xboxone">Xbox One</option>
+    <option value="xboxSS">Xbox Series S/X</option>
+    <option value="nes">Nintendo</option>
+    <option value="snes">Super Nintendo</option>
+    <option value="n64">Nintendo 64</option>
+    <option value="ngc">Nintendo GameCube</option>
+    <option value="wii">Nintendo Wii</option>
+    <option value="wiiu">Nintendo Wii U</option>
+    <option value="ns">Nintendo Switch</option>
+    <option value="outra">Outra</option>
+  </select>
+    
+    
+  
+  <label for="input-telefone">Preço</label><br />
+  <input
+    class="input-simples"
+    id="input-telefone"
+    name="input-telefone"
+    placeholder="Insira o preço"
+    type="number"
+    required
+    min="0"
+    [(ngModel)]="jogo.preco"
+  />
+  <label for="input-telefone">Capa URL</label><br />
+  <input
+    class="input-simples"
+    id="input-telefone"
+    name="input-telefone"
+    placeholder="Insira o o link da imagem"
+    type="text"
+    required
+    [(ngModel)]="jogo.url"
+  />
+  <label for="input-telefone">Logo URL</label><br />
+  <input
+    class="input-simples"
+    id="input-telefone"
+    name="input-telefone"
+    placeholder="Insira o o link da imagem"
+    type="text"
+    required
+    [(ngModel)]="jogo.logoUrl"
+  />
+  <button class="input-submeter" (click)="submeter()">Cadastrar</button>
+</form>

@@ -1,0 +1,84 @@
+.excluir-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff8f8;
+    border: 1px solid #f5c2c2;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Orbitron", "Segoe UI", sans-serif;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .label-excluir{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .input-id {
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .btn-excluir {
+    padding: 12px;
+  background: linear-gradient(
+    to right,
+    #000000,
+    #ff1e1e
+  ); /* gradiente preto e azul */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+
+  }
+  
+  .btn-excluir:hover {
+    transform: scale(1.05);
+  box-shadow: 0 0 10px #ff3e30;
+  background-color: rgba(255, 255, 255, 0.1);  
+  }
+  
+  .sucesso-mensagem {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+  }
+  
+  .erro-mensagem {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+  }
+
+  .label-excluir {
+  color: black;
+  font-weight: bold;
+}
+
+  #background-video {
+    position: fixed;
+    
+    min-height: auto;
+    width: 100%;
+    left: 0px;
+    bottom: 25px;
+    
+    z-index: -1;
+   
+    filter: brightness(1);
+    
+}

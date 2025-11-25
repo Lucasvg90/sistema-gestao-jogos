@@ -1,0 +1,28 @@
+<div class="excluir-container">
+  <img
+    class="fundo-fixo"
+    src="https://wallpapers.com/images/hd/god-of-war-kratos-nemean-cestus-art-86u9ww7bwy3g11hs.jpg"
+    alt="Fundo gamer"
+  />
+
+    <form (ngSubmit)="excluirCliente()">
+      <label for="input-id">Informe o ID para exclusão:</label>
+      <input
+        type="number"
+        id="input-id"
+        name="input-id"
+        [(ngModel)]="idExcluir"
+        class="input-id"
+        required
+      />
+      <button type="submit" class="btn-excluir">Excluir</button>
+    </form>
+  
+    <div *ngIf="mensagemSucesso" class="sucesso-mensagem">
+      {{ mensagemSucesso }}
+    </div>
+  
+    <div *ngIf="mensagemErro" class="erro-mensagem">
+      {{ mensagemErro }}
+    </div>
+  </div>

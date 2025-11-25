@@ -1,0 +1,266 @@
+{
+  "clientes": [
+    {
+      "id": "1",
+      "nome_cliente": "Lucas Fernandes",
+      "data_nascimento": "01/01/2000",
+      "email": "lucas@gmail.com",
+      "telefone": "11 98033-0085"
+    },
+    {
+      "id": "2",
+      "nome_cliente": "Lucas Otávio",
+      "data_nascimento": "01/01/2001",
+      "email": "lukinhasbom@gmail.com",
+      "telefone": "11 98461-0085"
+    },
+    {
+      "id": "3",
+      "nome_cliente": "Lucas Andrade Lima",
+      "data_nascimento": "01/01/2002",
+      "email": "receba@gmail.com",
+      "telefone": "11 98125-0085"
+    },
+    {
+      "id": "4",
+      "nome_cliente": "Lucas Ferreira Moraes",
+      "data_nascimento": "01/01/2003",
+      "email": "mamonas@gmail.com",
+      "telefone": "83 98486-0085"
+    },
+    {
+      "id": "5",
+      "nome_cliente": "Lucas da Silva e Silva",
+      "data_nascimento": "01/01/2004",
+      "email": "mundodalua@hotmail.com",
+      "telefone": "21 98033-5321"
+    },
+    {
+      "id": "6",
+      "telefone": "11 97022-9975",
+      "email": "dsaads@indio.com",
+      "data_nascimento": "2004-01-23",
+      "nome_cliente": "Pedro Paulo Paria"
+    },
+    {
+      "id": "7",
+      "nome_cliente": "Lucas Rodrigues Maia",
+      "data_nascimento": "2002-02-20",
+      "email": "luciano@amaral.com",
+      "telefone": "11 98080-8080"
+    },
+    {
+      "id": "8",
+      "data_nascimento": "1998-10-26",
+      "nome_cliente": "Lucas Pereira Silveira",
+      "email": "email@mail.com",
+      "telefone": "11 11111-1111"
+    },
+    {
+      "id": "9",
+      "nome_cliente": "Manoel Muniz",
+      "data_nascimento": "2005-01-26",
+      "email": "email@email.com",
+      "telefone": "11 97825-5154"
+    },
+    {
+      "id": 12,
+      "nome_cliente": "Oswaldo paes",
+      "data_nascimento": "1901-01-01",
+      "email": "email@paes.com",
+      "telefone": "11 99999-9999"
+    }
+  ],
+  "jogos": [
+    {
+      "id": "1",
+      "nome_jogo": "Dragon Ball Z: Budokai Tenkaichi 3",
+      "data_lancamento": "04/10/2007",
+      "genero": "Luta",
+      "plataforma": "PlayStation 2",
+      "preco": 19.9,
+      "url": "https://images.launchbox-app.com//e972da1f-02eb-4d2c-93d0-1c9b404f7d18.jpg",
+      "logoUrl": "https://images.launchbox-app.com//214a634e-b608-4fde-ae71-1698b649b1fd.png"
+    },
+    {
+      "id": "2",
+      "nome_jogo": "Grand Theft Auto: San Andreas",
+      "data_lancamento": "26/10/2004",
+      "genero": "Ação",
+      "plataforma": "PlayStation 2",
+      "preco": 9.9,
+      "url": "https://images.launchbox-app.com//769f89b4-2e07-452f-85c0-8d72b3d63977.jpg",
+      "logoUrl": "https://images.launchbox-app.com//cedf2f19-c121-43e3-873e-b9410a2f4051.png"
+    },
+    {
+      "id": "3",
+      "nome_jogo": "Red Dead Redemption",
+      "data_lancamento": "18/05/2010",
+      "genero": "Ação",
+      "plataforma": "Xbox 360",
+      "preco": 9.9,
+      "url": "https://images.launchbox-app.com//1174b9ad-68a1-4098-82de-41c60969fde3.jpg",
+      "logoUrl": "https://images.launchbox-app.com//5e6ec34d-dfa4-478d-bf51-511b5c9c7ed1.png"
+    },
+    {
+      "id": "4",
+      "nome_jogo": "Peppa Pig: The Game",
+      "data_lancamento": "04/12/2009",
+      "genero": "Terror",
+      "plataforma": "Nintendo Wii",
+      "preco": 149.9,
+      "url": "https://images.launchbox-app.com//e97c2db8-9938-46f4-8756-d6394a79eead.jpg",
+      "logoUrl": "https://images.launchbox-app.com//26e1b057-bba7-487c-bf55-9e8789d1c6b2.png"
+    },
+    {
+      "id": "5",
+      "plataforma": "Playstation 2",
+      "preco": 20.9,
+      "genero": "Tiro",
+      "data_lancamento": "2006-02-28",
+      "nome_jogo": "Black",
+      "url": "https://images.launchbox-app.com//8f6d5b2a-438e-4318-b983-62ec58e8208c.jpg",
+      "logoUrl": "https://images.launchbox-app.com//e8b889a4-323b-4e60-a909-867b06837ceb.png"
+    },
+    {
+      "id": "6",
+      "nome_jogo": "Alvin and the Chipmunks",
+      "data_lancamento": "2007-12-04",
+      "genero": "Música",
+      "plataforma": "wii",
+      "preco": 100.9,
+      "url": "https://images.launchbox-app.com//3593171a-a501-4321-aa8f-1abde239e08b.jpg",
+      "logoUrl": "https://images.launchbox-app.com//a4de4ef2-70e5-4171-94dd-62f62cfc8436.png"
+    },
+    {
+      "id": "7",
+      "nome_jogo": "Midnight Club 3: DUB Edition Remix",
+      "url": "https://images.launchbox-app.com//c33373b8-5caa-4135-9804-9b7f65139d98.jpg",
+      "preco": 9.9,
+      "plataforma": "ps2",
+      "genero": "Corrida",
+      "data_lancamento": "2006-03-13",
+      "logoUrl": "https://images.launchbox-app.com//f39a2620-7093-40e6-8ed0-ecc04b003741.png"
+    },
+    {
+      "id": "8",
+      "data_lancamento": "2012-10-05",
+      "nome_jogo": "Sonic Adventure 2",
+      "genero": "Plataforma",
+      "plataforma": "xbox360",
+      "preco": 19.9,
+      "url": "https://images.launchbox-app.com//4670f127-781d-432c-bebc-f592c9169f7c.jpg",
+      "logoUrl": "https://images.launchbox-app.com//631745a1-df95-49b8-9c56-bf83c63f5d2a.png"
+    },
+    {
+      "id": "9",
+      "url": "https://images.launchbox-app.com//ff9fbfdb-73ea-40ce-ac85-8f4221bc57e7.jpg",
+      "logoUrl": "https://images.launchbox-app.com//c3e7d4c2-e206-4fc2-a50a-d9dccffecd5c.png",
+      "nome_jogo": "Naruto Shippuden: Ultimate Ninja 5",
+      "data_lancamento": "2009-11-27",
+      "genero": "Luta",
+      "plataforma": "ps2",
+      "preco": 9.9
+    },
+    {
+      "id": "10",
+      "nome_jogo": "Need for Speed: Most Wanted",
+      "data_lancamento": "2005-11-22",
+      "genero": "Corrida",
+      "plataforma": "xbox360",
+      "preco": 9.9,
+      "url": "https://images.launchbox-app.com//80e7c117-9007-4bc3-bb49-f04308a1e592.jpg",
+      "logoUrl": "https://images.launchbox-app.com//b9844f8a-3bf9-44d9-9c58-b7def7b8cadc.png"
+    },
+    {
+      "id": "11",
+      "nome_jogo": "Burnout 2: Point of Impact",
+      "data_lancamento": "2003-04-09",
+      "genero": "Corrida",
+      "plataforma": "ngc",
+      "preco": 150.9,
+      "url": "https://images.launchbox-app.com//f40e6cd1-2000-40ca-bbe0-f65e530748f2.jpg",
+      "logoUrl": "https://images.launchbox-app.com//27b97ddb-b34f-404b-bc91-6cee2af3ccea.png"
+    },
+    {
+      "id": "12",
+      "nome_jogo": "Marvel vs. Capcom 2: New Age of Heroes",
+      "data_lancamento": "2003-03-27",
+      "genero": "Luta",
+      "plataforma": "ps2",
+      "preco": 29.9,
+      "url": "https://images.launchbox-app.com//032886c1-1b84-463d-9912-7bf684d8a23e.jpg",
+      "logoUrl": "https://images.launchbox-app.com//874df0e9-b58f-480d-b8a2-7b60bab1f8f6.png"
+    },
+    {
+      "id": "13",
+      "nome_jogo": "Dora the Explorer: Journey to the Purple Planet",
+      "data_lancamento": "2006-02-09",
+      "genero": "Terror",
+      "plataforma": "ps2",
+      "preco": 1200,
+      "url": "https://images.launchbox-app.com//f096705a-50a9-4ff9-9fed-056d97cf98e6.jpg",
+      "logoUrl": "https://images.launchbox-app.com//404cb0ca-abf1-4fe4-b696-afdf42042d3b.png"
+    },
+    {
+      "id": "14",
+      "preco": 42.9,
+      "nome_jogo": "Call of Duty: Black Ops II",
+      "data_lancamento": "2012-11-13",
+      "genero": "Tiro",
+      "plataforma": "xbox360",
+      "url": "https://images.launchbox-app.com//6ff8af0a-31b3-48b6-8dbb-0fd39f6fb756.jpg",
+      "logoUrl": "https://images.launchbox-app.com//eda6940b-4fb8-4636-92c1-87b1817be9c1.png"
+    },
+    {
+      "id": "15",
+      "nome_jogo": "Naruto: Ultimate Ninja 3",
+      "data_lancamento": "2008-03-25",
+      "genero": "Luta",
+      "plataforma": "ps2",
+      "preco": 9.9,
+      "url": "https://images.launchbox-app.com//d8c6fe52-f5a7-471d-9fbe-69e2d871c808.png",
+      "logoUrl": "https://images.launchbox-app.com//39756c28-5087-4984-a65a-8005872e9a57.png"
+    },
+    {
+      "id": "16",
+      "nome_jogo": "Ratatouille",
+      "data_lancamento": "2007-06-26",
+      "genero": "Aventura",
+      "plataforma": "ngc",
+      "preco": 45.9,
+      "logoUrl": "https://images.launchbox-app.com//46b79874-01a2-4efa-a4f1-a7bd5927d72d.png",
+      "url": "https://images.launchbox-app.com//6391e980-47eb-42ad-9b5a-2507cdf6e776.jpg"
+    },
+    {
+      "id": "17",
+      "nome_jogo": "Dragon Ball Z: Kakarot",
+      "data_lancamento": "2020-01-16",
+      "genero": "Aventura",
+      "plataforma": "ps4",
+      "preco": 159.9,
+      "url": "https://images.launchbox-app.com//d41e8066-78b3-4d08-a282-c374ba8663a0.jpg",
+      "logoUrl": "https://images.launchbox-app.com//a8b1e32d-e83a-4838-9875-f26b61717074.png"
+    },
+    {
+      "id": "18",
+      "nome_jogo": "Mortal Kombat X",
+      "data_lancamento": "2015-04-07",
+      "genero": "Luta",
+      "plataforma": "xboxone",
+      "preco": 78.9,
+      "logoUrl": "https://images.launchbox-app.com//6bdca487-0203-48d8-bad8-2e335224059f.png",
+      "url": "https://images.launchbox-app.com//ac65c01c-83f8-4ee4-98ce-b7828456a46d.jpg"
+    },
+    {
+      "id": "19",
+      "nome_jogo": "One Piece: Pirate Warriors 2",
+      "data_lancamento": "2013-09-03",
+      "genero": "Ação",
+      "plataforma": "ps3",
+      "preco": 69.9,
+      "url": "https://images.launchbox-app.com//ae85afad-21f0-4fcd-a0d7-a9bb816059e6.jpg",
+      "logoUrl": "https://images.launchbox-app.com//2cfb25fc-c5f3-4616-a80e-68c4bce28d12.png"
+    }
+  ]
+}

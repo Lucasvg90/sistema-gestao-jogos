@@ -1,0 +1,164 @@
+:root {
+    --card-bg: #ffffff;
+    --accent: #1e90ff
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-title h2 {
+    margin: 0 0 6px;
+    text-align: center;
+    position: relative;
+    right: 180px;
+    
+    
+}
+
+.page-title p {
+    text-align: right;
+    
+}
+
+.cart-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 20px;
+    align-items: start;
+    
+}
+
+.cart-left {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.cart-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 480px;
+    overflow: auto
+}
+
+.cart-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0
+}
+
+.cart-item .thumb {
+    width: 200px;
+    height: 105px;
+    object-fit: contain;
+    border-radius: 6px
+}
+
+.cart-item .meta {
+    flex: 1;
+    min-width: 0
+}
+
+.cart-item .name {
+    font-weight: 600;
+    color: #222
+}
+
+.cart-item .price {
+    color: var(--accent);
+    font-weight: 700;
+    margin-top: 4px
+}
+
+.cart-item .remove {
+    background: #e3342f;
+    color: #fff;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer
+}
+
+.empty {
+    padding: 32px;
+    text-align: center;
+    color: #666
+}
+
+.cart-right {
+    background: #fafafa;
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid #e6e6e6
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0
+}
+
+.finalize {
+    background: linear-gradient(90deg, #000);
+    color: #fff;
+    border: none;
+    padding: 10px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    
+}
+
+.payment-title {
+    font-size: 0.95rem;
+    margin-top: 12px
+}
+
+.payment-icons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 8px
+}
+
+@media (max-width:860px) {
+    .cart-layout {
+        grid-template-columns: 1fr
+    }
+
+    .cart-right {
+        order: 2
+    }
+}
+
+#background-video {
+    position: fixed;
+    
+    min-height: auto;
+    width: 100%;
+    left: 0px;
+    bottom: 25px;
+    
+    z-index: -1;
+   
+    filter: brightness(1);
+    opacity: 0.2;
+    
+}

@@ -1,0 +1,12 @@
+<img
+    class="fundo-fixo"
+    src="https://i.imgur.com/ZvU6f2D.gif"
+    alt="Fundo gamer"
+  />
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label>Preço:</label>
+  <input formControlName="preco" type="number" />
+
+  <button type="submit" id="btn-salvar">Salvar</button>
+</form>

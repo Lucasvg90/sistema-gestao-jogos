@@ -1,0 +1,17 @@
+<div>
+    <video autoplay loop id="background-video">
+        <source src="assets/fundo1.mp4" type="video/mp4" />
+        
+    </video>
+    
+    <div class="inicial-container">
+        <h1 class="titulo-inicial">Bem-vindo ao Sistema de Gestão de Jogos!</h1>
+        <p class="descricao-inicial">
+        Gerencie seus clientes e jogos de forma fácil e eficiente.
+        </p>
+        <div class="botoes-iniciais">
+        <button class="btn-cliente" (click)="setModeClientes()" routerLink="/listar" routerLinkActive="active">Administrador</button>
+        <button class="btn-jogo" (click)="setModeJogos()" routerLink="/listar-jogo" routerLinkActive="active">Visitante</button>
+        </div>
+    </div>
+</div>

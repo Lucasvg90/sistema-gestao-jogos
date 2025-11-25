@@ -1,0 +1,21 @@
+<nav class="menu">
+  <ul>
+    <li><a (click)="goInicial()" class="btn-inicial">Inicial</a></li>
+    <!-- Links para Clientes -->
+    <ng-container *ngIf="mode === 'clientes'">
+      <li><a routerLink="/cadastrar" routerLinkActive="active">Cadastrar</a></li>
+      <li><a routerLink="/consultar" routerLinkActive="active">Consultar</a></li>
+      <li><a routerLink="/excluir" routerLinkActive="active">Excluir</a></li>
+      <li><a routerLink="/listar" routerLinkActive="active">Listar</a></li>
+    </ng-container>
+
+    <!-- Links para Jogos -->
+    <ng-container *ngIf="mode === 'jogos'">
+      <li><a routerLink="/cadastrar-jogo" routerLinkActive="active">Cadastrar Jogo</a></li>
+      <li><a routerLink="/consultar-jogo" routerLinkActive="active">Consultar Jogo</a></li>
+      <li><a routerLink="/excluir-jogo" routerLinkActive="active">Excluir Jogo</a></li>
+      <li><a routerLink="/listar-jogo" routerLinkActive="active">Listar Jogo</a></li>
+      <li><a routerLink="/carrinho" routerLinkActive="active">Carrinho ({{ cartCount }})</a></li>
+    </ng-container>
+  </ul>
+</nav>

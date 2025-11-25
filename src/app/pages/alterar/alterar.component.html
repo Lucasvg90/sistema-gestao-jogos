@@ -1,0 +1,17 @@
+<video autoplay loop muted id="background-video">
+  <source src="assets/fundo3.mp4" type="video/mp4" />
+  Seu navegador não suporta vídeo.
+</video>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label>Nome:</label>
+  <input formControlName="nome" type="text" />
+
+  <label>Email:</label>
+  <input formControlName="email" type="email" />
+
+  <label>Telefone:</label>
+  <input formControlName="telefone" type="text" />
+
+  <button type="submit">Salvar</button>
+</form>

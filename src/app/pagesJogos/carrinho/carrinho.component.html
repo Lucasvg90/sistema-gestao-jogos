@@ -1,0 +1,36 @@
+<video autoplay loop muted id="background-video">
+  <source src="assets/fundo5.mp4" type="video/mp4" />
+  Seu navegador não suporta vídeo.
+</video>
+
+<div class="container">
+    <div class="page-title">
+        <h2>Carrinho de Compras</h2>
+        <p>Revise seus itens antes de finalizar a compra.</p>
+    </div>
+    <div class="cart-layout">
+        <div class="cart-left">
+            <div *ngIf="items.length === 0" class="empty">Seu carrinho está vazio.</div>
+            <ul class="cart-list">
+                <li *ngFor="let item of items; let i = index" class="cart-item">
+                    <img class="thumb" [src]="item.logoUrl" [alt]="item.nome_jogo" />
+                    <div class="meta">
+                        <div class="name">{{ item.nome_jogo }}</div>
+                        <div class="price">R$ {{ (item.preco || 0) | number:'1.2-2' }}</div>
+                    </div>
+                    <button class="remove" (click)="remove(i)">Remover</button>
+                </li>
+            </ul>
+        </div>
+
+        <aside class="cart-right">
+            <div class="summary">
+                <div class="summary-row"><span>Itens:</span><strong>{{ count }}</strong></div>
+                <div class="summary-row"><span>Valor total:</span><strong>R$ {{ total | number:'1.2-2' }}</strong></div>
+                
+                <button class="finalize" (click)="finalizar()">Finalizar Compra</button>
+            </div>
+
+        </aside>
+    </div>
+</div>

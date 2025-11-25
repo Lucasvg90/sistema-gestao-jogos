@@ -1,0 +1,25 @@
+<div class="corpo" >
+  <div *ngIf="listaJogos.length === 0" id='sem-jogos'>
+    Nenhum jogo cadastrado até o momento.
+    <img id="sem-jogos-gif" src="https://media.tenor.com/BB569P_vQz0AAAAM/sonic-sonic-waiting.gif" alt="Nenhum jogo" />
+  </div>
+  <div class="cards-wrapper">
+    <div class="cards-container">
+
+      <div class="game-card" *ngFor="let jogo of listaJogos">
+        <img class="game-cover" [src]="jogo.url" [alt]="jogo.nome_jogo" />
+        <div class="game-body">
+          <h3 class="game-title">{{ jogo.nome_jogo }}</h3>
+          <p class="game-meta">{{ jogo.genero }} • {{ getPlatformLabel(jogo.plataforma) }}</p>
+          <p class="game-release">{{ formatDateBR(jogo.data_lancamento) }}</p>
+          <p class="game-price">R$ {{ (jogo.preco).toFixed(2) }}</p>
+        </div>
+        <div class="card-actions">
+          <button class="btn-adicionar" (click)="addToCart(jogo)">Adicionar</button>
+          <button *ngIf="jogo.id" class="btn-editar" [routerLink]="['/alterar-jogo', jogo.id]">Editar</button>
+          <button class="btn-excluir" (click)="excluir(jogo.id!)">Excluir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,68 @@
+<div class="container">
+  <img  class="fundo-fixo"
+        src="https://i.pinimg.com/originals/b6/6f/49/b66f49842b424454d04a5ce3afec17ee.jpg"
+        alt="Fundo gamer"
+      />
+
+<h1 class="titulo-gamer">Crie sua Conta</h1>
+
+<form (ngSubmit)="submeter(clienteForm)" #clienteForm="ngForm">
+  <label for="input-nome">Nome Completo</label><br />
+  <input
+    class="input-simples"
+    id="input-nome"
+    name="nome_cliente"
+    placeholder="Digite seu nome completo"
+    type="text"
+    required
+    [(ngModel)]="cliente.nome_cliente"
+  />
+  <label for="input-nascimento">Data de Nascimento</label><br />
+  <input
+    class="input-simples"
+    id="input-data-nascimento"
+    name="data_nascimento"
+    placeholder="dd/mm/aaaa"
+    type="text"
+    minlength="10"
+    maxlength="10"
+    required
+    (input)="formatDateInput($event)"
+    [(ngModel)]="cliente.data_nascimento"
+    [class.input-invalid]="dateInvalid"
+  />
+  <div *ngIf="dateInvalid" class="error-text">Data inválida. Use dd/mm/aaaa (ex.: 31/12/2000).</div>
+  <label for="input-sobrenome">E-mail</label><br />
+  <input
+    class="input-simples"
+    id="input-email"
+    name="email"
+    placeholder="email@exemplo.com.br"
+    type="text"
+    required
+    [(ngModel)]="cliente.email"
+  />
+  <label for="input-telefone">Telefone</label><br />
+  <input
+    class="input-simples"
+    id="input-telefone"
+    name="telefone"
+    placeholder="Insira o telefone"
+    type="tel"
+    required
+    [(ngModel)]="cliente.telefone"
+  />
+
+  <div class="termos">
+          <input type="checkbox" id="termos" name="termos" required [(ngModel)]="termosAceito" />
+          <label for="termos" style="display: inline"
+            >Li e aceito os <strong>Termos de Serviço</strong> e a <strong>Política de
+            Privacidade</strong>.</label
+          >
+        </div>
+
+        
+  <button class="input-submeter" type="submit">Cadastrar</button>
+</form>
+
+</div>

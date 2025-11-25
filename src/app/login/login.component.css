@@ -1,0 +1,81 @@
+.login-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(30, 144, 255, 0.5);
+  margin: 6rem 11rem auto 11rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container h2 {
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  outline: none; /* remove o contorno azul padrão */
+  border: 2px solid #1e90ff; /* borda azul personalizada */
+  transition: all 0.3s ease;
+}
+
+.actions {
+  text-align: center;
+}
+.actions button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background: linear-gradient(to right, #000000, #1e90ff);
+  color: white;
+}
+
+.actions button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 4px #1e90ff;
+  color: #1abc9c;
+  background-color: rgba(171, 11, 11, 0.1);
+}
+
+.error {
+  color: #b00020;
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+img.fundo-fixo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.titulo-animado {
+  animation: colorShift 3s infinite alternate;
+}
+
+@keyframes colorShift {
+  0% {
+    color: #1e90ff;
+  }
+  50% {
+    color: #11afaf;
+  }
+  100% {
+    color: #065a49;
+  }
+}

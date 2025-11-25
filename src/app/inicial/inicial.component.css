@@ -1,0 +1,52 @@
+.inicial-container {
+    max-width: 40%;
+    margin: 10% auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.5);
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.botoes-iniciais {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.btn-cliente {
+  padding: 12px;
+  background-color:black; /* gradiente preto e azul */
+  color: white;
+  font-weight: bold;
+  border: 2px solid rgb(255, 255, 255);
+  
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.btn-jogo {
+    padding: 12px;
+  background-color:white; /* gradiente preto e azul */
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(0.7);
+    
+}
