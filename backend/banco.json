@@ -64,7 +64,7 @@
       "telefone": "11 97825-5154"
     },
     {
-      "id": 12,
+      "id": "12",
       "nome_cliente": "Oswaldo paes",
       "data_nascimento": "1901-01-01",
       "email": "email@paes.com",
@@ -244,13 +244,7 @@
     },
     {
       "id": "18",
-      "nome_jogo": "Mortal Kombat X",
-      "data_lancamento": "2015-04-07",
-      "genero": "Luta",
-      "plataforma": "xboxone",
-      "preco": 78.9,
-      "logoUrl": "https://images.launchbox-app.com//6bdca487-0203-48d8-bad8-2e335224059f.png",
-      "url": "https://images.launchbox-app.com//ac65c01c-83f8-4ee4-98ce-b7828456a46d.jpg"
+      "preco": 78
     },
     {
       "id": "19",
