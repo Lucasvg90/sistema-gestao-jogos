@@ -16,6 +16,8 @@ export class AlterarJogoComponent implements OnInit{
 
    form!: FormGroup;
     jogoId!: number;
+    jogoOriginal!: Jogo;
+    jogoIds!: string;
   
     constructor(
       private route: ActivatedRoute,
@@ -26,6 +28,7 @@ export class AlterarJogoComponent implements OnInit{
   
     ngOnInit(): void {
       this.jogoId = Number(this.route.snapshot.paramMap.get('id'));
+      this.jogoIds = this.jogoId.toString();
   
       this.form = this.fb.group({
         preco: ['']
@@ -34,6 +37,7 @@ export class AlterarJogoComponent implements OnInit{
       this.jogosService.buscarPorId(this.jogoId).subscribe(jogo => {
         //Se o jogo foi encontrado, atualiza os valores do formulário com os dados do jogo encontrado.
         if (jogo) {
+          this.jogoOriginal = jogo;
           this.form.patchValue({
             preco: jogo.preco,
             
@@ -45,8 +49,8 @@ export class AlterarJogoComponent implements OnInit{
     onSubmit() {
       if(this.form.valid){
         const JogoAtualizado: Jogo = {
-          id: this.jogoId,
-          ...this.form.value
+          ...this.jogoOriginal,
+          preco: this.form.value.preco
       
         };
         this.jogosService.editar(JogoAtualizado).subscribe(() => {

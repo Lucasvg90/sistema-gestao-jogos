@@ -243,16 +243,12 @@
       "logoUrl": "https://images.launchbox-app.com//a8b1e32d-e83a-4838-9875-f26b61717074.png"
     },
     {
-      "id": "18",
-      "preco": 78
-    },
-    {
       "id": "19",
       "nome_jogo": "One Piece: Pirate Warriors 2",
       "data_lancamento": "2013-09-03",
       "genero": "Ação",
       "plataforma": "ps3",
-      "preco": 69.9,
+      "preco": 65.9,
       "url": "https://images.launchbox-app.com//ae85afad-21f0-4fcd-a0d7-a9bb816059e6.jpg",
       "logoUrl": "https://images.launchbox-app.com//2cfb25fc-c5f3-4616-a80e-68c4bce28d12.png"
     }
