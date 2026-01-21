@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { JogosService } from '../../core/service/clientes.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Router, RouterModule } from '@angular/router'; // Importações corretas
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-excluir-jogo',
@@ -12,30 +12,33 @@ import { Router, RouterModule } from '@angular/router'; // Importações correta
 })
 export class ExcluirJogoComponent {
 
-  idExcluir: number | null = null;
+  idExcluir: string = ''; // Mude para string
+
   mensagemSucesso: string = '';
   mensagemErro: string = '';
 
-  constructor( private jogosService: JogosService,
-                private router: Router ) {}
-    
+  constructor(private jogosService: JogosService,
+              private router: Router) {}
 
   excluirJogo(): void {
     this.mensagemSucesso = '';
     this.mensagemErro = '';
 
-    if (this.idExcluir != null) {
-      this.jogosService.excluir(this.idExcluir).subscribe({
+    if (this.idExcluir && this.idExcluir.trim() !== '') {
+      this.jogosService.excluir(+this.idExcluir).subscribe({
         next: () => {
-          this.mensagemSucesso = 'Cliente excluído com sucesso.';
+          this.mensagemSucesso = 'Jogo excluído com sucesso.';
+          this.idExcluir = '';
           // Navegar de volta para a lista após exclusão bem-sucedida
-          this.router.navigate(['/listar']);
+          setTimeout(() => this.router.navigate(['/listar']), 1500);
         },
-        error: () => {
-          this.mensagemErro = 'Erro ao excluir o cliente. Verifique se o ID está correto.';
+        error: (err) => {
+          console.error('Erro:', err);
+          this.mensagemErro = 'Erro ao excluir o jogo. Verifique se o ID está correto.';
         }
       });
+    } else {
+      this.mensagemErro = 'Por favor, informe um ID válido.';
     }
   }
-
 }

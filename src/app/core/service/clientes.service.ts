@@ -62,27 +62,40 @@ mó preguiçakk
   providedIn: 'root',
 })
 export class JogosService {
-  private readonly API = 'http://localhost:3000/jogos';
+  private apiUrl = 'http://localhost:3000/jogos';
+
   constructor(private http: HttpClient) {}
   listar(): Observable<Jogo[]> {
-    return this.http.get<Jogo[]>(this.API);
+    return this.http.get<Jogo[]>(this.apiUrl);
   }
 
   incluir(jogo: Jogo): Observable<Jogo> {
-    return this.http.post<Jogo>(this.API, jogo);
+    return this.http.post<Jogo>(this.apiUrl, {
+      ...jogo,
+      id: String(this.gerarNovoId()) // Garante que o ID seja uma string
+    });
   }
-  
-  excluir(id: number): Observable<Jogo> {
-    return this.http.delete<Jogo>(this.API + `/${id}`);
+
+  private gerarNovoId(): number {
+    const timestamp = Date.now();
+    const random = Math.floor(Math.random() * 1000);
+    return timestamp + random;
+  }
+
+  excluir(id: number | string): Observable<void> {
+    // Converte para string para garantir compatibilidade com o JSON
+    const idString = String(id);
+    return this.http.delete<void>(`${this.apiUrl}/${idString}`);
   }
   
   editar(jogo: Jogo): Observable<Jogo> {
-    const url = `${this.API}/${jogo.id}`
+    const idString = String(jogo.id);
+    const url = `${this.apiUrl}/${idString}`
     return this.http.put<Jogo>(url, jogo)
   }
   
   buscarPorId(id: number): Observable<Jogo | undefined> {
-    const url = `${this.API}?id=${id}`;
+    const url = `${this.apiUrl}?id=${id}`;
     return this.http.get<Jogo[]>(url).pipe(
       map(list => (list && list.length > 0 ? list[0] : undefined))
     );
