@@ -25,12 +25,12 @@ export class ExcluirJogoComponent {
     this.mensagemErro = '';
 
     if (this.idExcluir && this.idExcluir.trim() !== '') {
-      this.jogosService.excluir(+this.idExcluir).subscribe({
+      this.jogosService.excluir(this.idExcluir).subscribe({
         next: () => {
           this.mensagemSucesso = 'Jogo excluído com sucesso.';
           this.idExcluir = '';
           // Navegar de volta para a lista após exclusão bem-sucedida
-          setTimeout(() => this.router.navigate(['/listar']), 1500);
+          setTimeout(() => this.router.navigate(['/listar-jogo']), 1500);
         },
         error: (err) => {
           console.error('Erro:', err);

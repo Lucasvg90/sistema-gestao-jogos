@@ -16,7 +16,16 @@ export class ClientesService {
   }
 
   incluir(cliente: Cliente): Observable<Cliente> {
-    return this.http.post<Cliente>(this.API, cliente);
+    return this.http.post<Cliente>(this.API, {
+      ...cliente,
+      id: String(this.gerarNovoId()) // Garante que o ID seja uma string
+    });
+  }
+
+  private gerarNovoId(): number {
+    const timestamp = Date.now();
+    const random = Math.floor(Math.random() * 1000);
+    return timestamp + random;
   }
 
   excluir(id: number | string): Observable<Cliente> {
@@ -43,7 +52,7 @@ export class ClientesService {
     return this.http.put<Cliente>(url, cliente)
   }
   
-  buscarPorId(id: number): Observable<Cliente | undefined> {
+  buscarPorId(id: number | string): Observable<Cliente | undefined> {
     const url = `${this.API}?id=${id}`;
     return this.http.get<Cliente[]>(url).pipe(
       map(list => (list && list.length > 0 ? list[0] : undefined))

@@ -62,11 +62,11 @@ export class ListarComponent implements OnInit{
     return s;
   }
 
-  excluir(id: number) {
-    const nid = Number(id);
+  excluir(id: number | string) {
+    const nid = String(id);
     this.service.excluir(nid).subscribe({
       next: () => {
-        this.listaClientes = this.listaClientes.filter(cliente => Number((cliente as any).id) !== nid);
+        this.listaClientes = this.listaClientes.filter(cliente => String(cliente.id) !== nid);
         this.toast.show('Cliente excluído', 2500);
       },
       error: (err) => {

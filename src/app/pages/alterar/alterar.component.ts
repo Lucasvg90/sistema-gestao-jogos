@@ -15,7 +15,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 })
 export class AlterarComponent implements OnInit{
   form!: FormGroup;
-  clienteId!: number;
+  clienteId!: string | number;
   originalCliente?: Cliente;
 
   constructor(
@@ -26,7 +26,8 @@ export class AlterarComponent implements OnInit{
   ) { }
 
   ngOnInit(): void {
-    this.clienteId = Number(this.route.snapshot.paramMap.get('id'));
+    // Recebe o ID como string da URL
+    this.clienteId = this.route.snapshot.paramMap.get('id') as string;
 
     this.form = this.fb.group({
       nome: [''],

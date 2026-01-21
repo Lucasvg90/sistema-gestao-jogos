@@ -203,16 +203,6 @@
       "logoUrl": "https://images.launchbox-app.com//404cb0ca-abf1-4fe4-b696-afdf42042d3b.png"
     },
     {
-      "id": "14",
-      "preco": 42.9,
-      "nome_jogo": "Call of Duty: Black Ops II",
-      "data_lancamento": "2012-11-13",
-      "genero": "Tiro",
-      "plataforma": "xbox360",
-      "url": "https://images.launchbox-app.com//6ff8af0a-31b3-48b6-8dbb-0fd39f6fb756.jpg",
-      "logoUrl": "https://images.launchbox-app.com//eda6940b-4fb8-4636-92c1-87b1817be9c1.png"
-    },
-    {
       "id": "15",
       "nome_jogo": "Naruto: Ultimate Ninja 3",
       "data_lancamento": "2008-03-25",
@@ -251,16 +241,6 @@
       "preco": 20,
       "url": "https://images.launchbox-app.com//ec999f43-9fc5-449f-8698-2eac89cbfaef.jpg",
       "logoUrl": "https://gamesdb-images.launchbox.gg/r2_fb062340-4f3b-4d7d-915b-fc6c6765fab1.png"
-    },
-    {
-      "id": "22",
-      "data_lancamento": "2004-11-09",
-      "nome_jogo": "Halo 2",
-      "genero": "Tiro",
-      "plataforma": "xbox",
-      "preco": 65.9,
-      "logoUrl": "https://images.launchbox-app.com//7c78ee16-f420-4ec1-a740-2694fd1ab713.png",
-      "url": "https://images.launchbox-app.com//ea79d9b4-6cb4-46dd-951d-d7ef9e9beb1b.jpg"
     },
     {
       "id": "1769024087446",
